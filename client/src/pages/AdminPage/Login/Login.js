@@ -154,7 +154,7 @@ const AdminPage = () => {
 
     return (
         <>
-            {isLoggedIn ? <Dashboard/> : <IsAdminForm/>}
+            {!isLoggedIn ? <Dashboard/> : <IsAdminForm/>}
 
         </>
     );
